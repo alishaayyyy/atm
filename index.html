@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./app.css">
+  <title>Document</title>
+</head>
+<body>
+  
+  <div class="atm-container">
+    <h1>ATM Machine</h1>
+
+    <!-- Display current balance -->
+    <div class="balance-display">
+        <p id="balanceDisplay">Your Balance: Rs 0</p>
+    </div>
+
+    <!-- Button Section (ATM Buttons) -->
+    <div class="atm-buttons">
+        <button onclick="showDeposit()">Deposit</button>
+        <button onclick="showWithdraw()">Withdraw</button>
+        <button onclick="checkBalance()">Check Balance</button>
+    </div>
+
+    <!-- Deposit Section -->
+    <div id="depositSection" class="hidden">
+        <h3>Deposit Money</h3>
+        <input type="number" id="depositAmount" placeholder="Enter deposit amount">
+        <button onclick="depositMoney()">Deposit</button>
+    </div>
+
+    <!-- Withdraw Section -->
+    <div id="withdrawSection" class="hidden">
+        <h3>Withdraw Money</h3>
+        <input type="number" id="withdrawAmount" placeholder="Enter withdrawal amount">
+        <button onclick="withdrawMoney()">Withdraw</button>
+    </div>
+
+    <!-- Feedback Message -->
+    <p id="feedbackMessage" class="feedback-message"></p>
+</div>
+
+
+  <script src="./app.js"></script>
+</body>
+</html>
